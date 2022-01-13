@@ -79,7 +79,6 @@ namespace HospitalLinq.Controllers.api
                 someNurse.BirthDate = value.BirthDate;
                 someNurse.Wage = value.Wage;
                 someNurse.WorkHours = value.WorkHours;
-                HopsitalDB.Nurses.InsertOnSubmit(value);
                 HopsitalDB.SubmitChanges();
                 return Ok(HopsitalDB.Nurses.ToList());
             }
